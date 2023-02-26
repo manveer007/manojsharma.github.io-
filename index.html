@@ -1,154 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-        <title>Manoj Sharma</title>
-    </head>
-    <body>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Manoj Sharma</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-        <div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-         </div>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-         <!-- HEADER -->
-         <header class="l-header">
-            <nav class="nav bd-grid">
-                <div style="font-size: 45px;">
-                    <a href="#" class="nav__logo">NUMAN TECH</a>
-                </div>
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="M.png">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">MANOJ SHARMA</span><br>Java Web Developer</h1>
+</head>
 
-                    <a href="contact.html" class="button">Contact</a>
-                </div>
+<body id="top">
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/manoj-sharma-251585137/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxjhbDzkjcDFncdRdvCWfVklMHRGLrZTcqwRPzrVPhmQSxMBpMhrhmZDDntDRZpqwFTtss" class="home__social-icon"><i class='bx bxl-gmail' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-                <div class="home__img">    
-                    <img src="/img/profile.png" alt="">
-                </div>
-            </section>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+	   		<div class="logo">
+		         <a href="index.html">Manoj</a>
+		      </div>		      
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="img/about.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Manoj Sharma</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+						<li><a href="styles.html" title="">Style Demo</a></li>				
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+   	<div class="intro-overlay"></div>	
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        </div>
-                       
-                        </div>
-                    </div>
-                </div>
-            </section>
+   	<div class="intro-content">
+   		<div class="row">
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+   			<div class="col-twelve">
 
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="/img/1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="/img/2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="/img/3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="/img/4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="/img/5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="/img/6.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Numan Tech</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p>&#169; 2023 copyright all right reserved</p>
-        </footer>
-       
-    </body>
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Manoj Sharma.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Full Stack Developer</span>
+	   				
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         
+         <li><a href="https://www.linkedin.com/in/manoj-sharma-251585137"><i class="fa fa-link"></i></a></li>
+         <li><a href="https://www.instagram.com/_manveer_sharma_/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve"></div>
+   			 			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Strong in design and integration with intuitive problem-solving skill. Proficient in JAVA,C++,HTML,CSS, and SQL. Passionate about implementing and launching new projects. Ability to translate business requirement into technical solution. Looking to start the career as entry-level software engineer.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Manoj Sharma</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>May 22, 2000</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer, Fullstack  Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.manojsharma.com</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>mrmnanoj53@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p> Proficiency in Java, with a good understanding of its ecosystems. Sound knowledge of Object-Oriented Programming (OOP) Patterns and Concepts. Familiarity with different design and architectural patterns. Skill for writing reusable Java libraries.
+				</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>JAVA</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>HTML</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>CSS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>MYSQL</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   	
+   			<a href="RESUME.pdf" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+	
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+   			<h2>Education</h2>
+
+   		</div> 
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>July 2019 - June 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>GURUGRAM UNIVERSITY</h4>
+	   					<p>Bachelors in Computer Application (BCA) is a three-year undergraduate degree course for students who wish to delve into the world of Computer languages. The BCA course is one of the most popular options to get started with a career in Information Technology.</p>
+	   				</div>
+
+	   			
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> 
+				    
+
+   	<!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            GURGAON<br>
+			HARYANA, 122002
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>MRMANOJ53@GMAIL.COM		     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>
+			   	Mobile: (+91) 9540794277<br>
+			     	
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright.</span> 
+		        	<span>Design by <a>MANOJ SHARMA</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
